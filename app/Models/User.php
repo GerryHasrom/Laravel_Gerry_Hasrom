@@ -10,7 +10,7 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable; //ada 3 trait yang dipakai
 
     /**
      * The attributes that are mass assignable.
@@ -42,3 +42,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+
+// Model ini memberikan representasi Eloquent dari entitas pengguna dalam
+// aplikasi Laravel, termasuk penggunaan otentikasi, otentikasi API, dan
+// beberapa trait untuk mendukung fungsionalitas tambahan.
